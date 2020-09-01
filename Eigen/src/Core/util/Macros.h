@@ -221,7 +221,8 @@
 #endif
 
 /// \internal EIGEN_ARCH_ARM64 set to 1 if the architecture is ARM64
-#if defined(__aarch64__)
+#if defined(__aarch64__) || defined(__gptx__)
+
   #define EIGEN_ARCH_ARM64 1
 #else
   #define EIGEN_ARCH_ARM64 0
